@@ -78,7 +78,7 @@ class MadiunMobil extends LayananTransportasi {
             System.out.println("Total Bayar: Rp " + total);
             System.out.println("Sisa Saldo: Rp " + saldoUser);
         } else {
-            System.out.println("Gagal: Saldo tidak mencukupi untuk perjalanan ini!");
+            System.out.println("Saldo tidak mencukupi untuk perjalanan ini!");
         }
     }
 }
