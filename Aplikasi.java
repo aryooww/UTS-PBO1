@@ -31,7 +31,7 @@ class MadiunMotor extends LayananTransportasi {
     }
 
     public void prosesTransaksi() {
-        System.out.println("=== Transaksi oleh NAMA ANDA - NIM ANDA ===");
+        System.out.println("=== Transaksi oleh Setyo Aryo Wiguno - 254311016 ===");
 
         double total = hitungTarif();
 
@@ -43,7 +43,7 @@ class MadiunMotor extends LayananTransportasi {
             System.out.println("Total Bayar: Rp " + total);
             System.out.println("Sisa Saldo: Rp " + saldoUser);
         } else {
-            System.out.println("Gagal: Saldo tidak mencukupi untuk perjalanan ini!");
+            System.out.println("Saldo tidak mencukupi untuk perjalanan ini!");
         }
     }
 }
@@ -66,7 +66,7 @@ class MadiunMobil extends LayananTransportasi {
     }
 
     public void prosesTransaksi() {
-        System.out.println("=== Transaksi oleh NAMA ANDA - NIM ANDA ===");
+        System.out.println("=== Transaksi oleh Setyo Aryo Wiguno - 254311016 ===");
 
         double total = hitungTarif();
 
