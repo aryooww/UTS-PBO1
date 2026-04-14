@@ -1,21 +1,17 @@
 public class AplikasiMadiunJek {
     public static void main(String[] args) {
 
-        LayananTransportasi[] layanan = new LayananTransportasi[2];
+        LayananTransportasi motor = new MadiunMotor("Budi", 5, 20000);
+        LayananTransportasi mobil = new MadiunMobil("Andi", 3, 50000, 254311016);
 
-        layanan[0] = new MadiunMotor("Budi", 5, 20000);
-        layanan[1] = new MadiunMobil("Andi", 3, 50000, 22030045); // ganti NIM kamu
+        // Jalankan Motor
+        System.out.println("Tarif Motor: Rp " + motor.hitungTarif());
+        ((MadiunMotor) motor).prosesTransaksi();
 
-        for (LayananTransportasi l : layanan) {
-            System.out.println("Tarif: Rp " + l.hitungTarif());
+        System.out.println();
 
-            if (l instanceof MadiunMotor) {
-                ((MadiunMotor) l).prosesTransaksi();
-            } else if (l instanceof MadiunMobil) {
-                ((MadiunMobil) l).prosesTransaksi();
-            }
-
-            System.out.println();
-        }
+        // Jalankan Mobil
+        System.out.println("Tarif Mobil: Rp " + mobil.hitungTarif());
+        ((MadiunMobil) mobil).prosesTransaksi();
     }
 }
